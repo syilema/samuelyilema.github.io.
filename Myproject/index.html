@@ -1,0 +1,131 @@
+<!DOCTYPE html
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+  <div class="container-all">
+   <div class="container">
+   <nav class="navbar-inverse navbar">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">My e-Portfolios</a>
+      </div>
+  </nav>  
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <div class="image"><img src="KUEG000A.jpg" style="width:100%" height="300"></div>
+    <div class="text">Samuel Yilema</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+        <div class="image"><img src="sky.jpg" style="width:100%" height="300"></div>
+    <div class="text">Samuel Yilema</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+      <div class="image"><img src="presentation.jpg" style="width:100%" height="300"></div>
+      
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+    <script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>      
+    </button>
+  </div>
+    <div class="collapse navbar-collapse" id="my-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About me.html">About Me </a></li>
+          <li><a href="CareerGoal.html">Project</a></li>
+          <li><a href="Resume.html">Resume </a></li>
+          <li><a href="Contact.html">Contact </a></li>
+        </ul>
+        
+    </div>
+  </div>
+  </nav>
+ 
+<div class="row1">
+  <div class="col-sm-12 col-md-4 col-lg-4">
+  <div class="circular">
+    <img src="sami.jpg" class="img-circle" alt="Cinque Terre"> 
+  </div>
+  </div>
+  <div class="col-sm-12 col-md-8 col-lg-8"> 
+    <h2><span class="color_25"><span style="font-size:32px;">Welcome!</span></span></h2>
+    <span class="color_25">As a Computer Science student I am working toward my life long goal of getting my master dgree in a field of Computer Science that I truly love.I'm currently working at ceva/dell as Database administrator monitoring SQL performance and manage parameters in order to provide fast responses to front-end users and write database documentation, including data standards, procedures and definitions for the data dictionary (metadata). I took my bachlore dgree at Tennesse state university. I have complted my senior project mobile app development that help user locate items in local store,and I'm spinning up a side project that applies theatrical performance theory to computer code.</span>
+</div>
+</div>
+
+  <div class="row">      
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <!-- Add Google Maps -->
+      <div id="googleMap"></div>
+        <script>
+          function myMap() {
+            var myCenter = new google.maps.LatLng(36.129002,-86.506348);
+            var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            var marker = new google.maps.Marker({position:myCenter});
+                marker.setMap(map);
+                  }
+        </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe3neFWfpcdhZVOKiHWWKpItU06Hepu1E&callback=myMap"></script>
+    </div>
+    
+    <div class="col-sm-12 col-md-8 col-lg-8">
+    <div class="bubble"></div>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-8">
+    <h4>"A good programmer is someone who always looks both ways before crossing a one-way street." ~Doug Linder
+</h4>
+  </div>
+
+<div class="container3">
+  <div class="button">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>   
+  </div>
+  <footer>&copy; Copyright 2017 Samuel Yilema</footer>
+</div>
+</div>
+</div>
+</body>
+</html>

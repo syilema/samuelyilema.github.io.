@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///Users/samuel/Desktop/Myproject/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Bootstrap Example</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./Bootstrap Example_files/bootstrap.min.css">
+  <script src="./Bootstrap Example_files/jquery.min.js"></script>
+  <script src="./Bootstrap Example_files/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./Bootstrap Example_files/font-awesome.min.css">
+  <link rel="stylesheet" href="./Bootstrap Example_files/style.css">
+
+</head>
+<body>
+   <div class="container">
+  <nav class="navbar-inverse">
+  <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="file:///Users/samuel/Desktop/Myproject/index.html#">e-Portfolios Samuel</a>
+      </div>
+        <ul class="nav navbar-nav"></ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="file:///Users/samuel/Desktop/Myproject/index.html#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+  </nav>
+<div class="slideshow-container">
+  <div class="mySlides fade" style="display: block;">
+    <div class="numbertext">1 / 3</div>
+    <div class="image"><img src="./Bootstrap Example_files/water.jpg" style="width:100%"></div>
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">2 / 3</div>
+        <div class="image"><img src="./Bootstrap Example_files/water.jpg" style="width:100%"></div>
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <div class="numbertext">3 / 3</div>
+      <div class="image"><img src="./Bootstrap Example_files/water.jpg" style="width:100%"></div>
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  </div>
+
+<nav class="navbar-inverse">
+  <div class="container-fluid">
+      
+        <ul class="nav navbar-nav">
+          <li><a href="file:///Users/samuel/Desktop/Myproject/index.html">Home</a></li>
+          <li><a href="file:///Users/samuel/Desktop/Myproject/About%20me.html">About Me </a></li>
+          <li><a href="file:///Users/samuel/Desktop/Myproject/index.html#">Educational &amp; Career Goals</a></li>
+          <li><a href="file:///Users/samuel/Desktop/Myproject/index.html#">Achievements </a></li>
+          <li><a href="file:///Users/samuel/Desktop/Myproject/index.html#">Resume </a></li>
+          <li><a href="file:///Users/samuel/Desktop/Myproject/index.html#">Links  </a></li>
+           <li><a href="file:///Users/samuel/Desktop/Myproject/index.html#">Contact </a></li>
+        </ul>
+        
+    </div>
+<div class="jumbotron text-center">
+  <div class="circular">
+    <img src="./Bootstrap Example_files/water.jpg" class="img-circle" alt="Cinque Terre" width="340" height="266"> 
+  </div>
+  <div class="helotext">
+    <div style="left: 473px; width: 429px; position: absolute; top: 112px;" class="txtNew" id="hy5m0b8z" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$mainPage_DESKTOP.$inlineContent.$hy5m0b8z"><h2 style="font-size:32px;" class="font_2"><span class="color_25"><span style="font-size:32px;">Welcome!</span></span></h2>
+</div>
+    <div style="left: 468px; width: 423px; position: absolute; top: 218px;" class="txtNew" id="hy5mpowm" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.$centeredContent.$inlineContent.$SITE_PAGES.$mainPage_DESKTOP.$inlineContent.$hy5mpowm"><p class="font_7" style="line-height:1.4em;"><span class="color_25">As a Computer Science student&nbsp;I am working toward my life long goal of getting my dgree in a field of Computer Science that I truly love. My research focuses&nbsp;on&nbsp;coral reef ecology and I am able to combine my passions of research, teaching and scuba diving into the work I am pursuing at Auburn University!</span></p>
+      </div>
+  </div>
+</div>
+
+<div class="container-row">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Student Assingment</h3>
+      <p>This page will show all assingment that <br> asigned to this class for this semester</p>
+      <p>Ut enim ad..</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor..</p>
+      <p>Ut enim ad..</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3> 
+      <p>Lorem ipsum dolor..</p>
+      <p>Ut enim ad..</p>
+    </div>
+  </div>
+</div>
+</nav></div>
+<div class="container">
+  <div class="button">
+    <a href="file:///Users/samuel/Desktop/Myproject/index.html#" class="fa fa-facebook"></a>
+    <a href="file:///Users/samuel/Desktop/Myproject/index.html#" class="fa fa-twitter"></a>
+    <a href="file:///Users/samuel/Desktop/Myproject/index.html#" class="fa fa-google"></a>
+    <a href="file:///Users/samuel/Desktop/Myproject/index.html#" class="fa fa-linkedin"></a>
+    <a href="file:///Users/samuel/Desktop/Myproject/index.html#" class="fa fa-youtube"></a>
+  </div>
+<footer class="navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <span>Samuel Yilema 2017</span>
+  </div>
+</footer>
+
+</div>
+
+</body></html>

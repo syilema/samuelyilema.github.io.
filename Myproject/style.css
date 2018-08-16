@@ -1,0 +1,255 @@
+#googleMap {
+      width: 100%;
+      height: 250px;
+      
+  } 
+.{
+  background-color: white;
+}
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.rowheader{
+  font: white;
+  background-color:white; 
+}
+.pic{
+  background-image: url("back.jpg");
+}
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.row1{
+    
+    background-color:#c1dddd;
+  }
+.container-all{
+    background-image: url("back.jpg");
+  }
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+} 
+.container{
+  width: 70%;
+  background-color:white;
+}
+.container3{
+  float: left;
+  width: 100%;
+}
+.resume{
+  background-color: #c1dddd;
+
+}
+.bubble{
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background: red; left: -5px; top: 0px;}
+    25%  {background: yellow; left: 90%; top: 0px;}
+    50%  {background: blue; left: 90%; top: 200px;}
+    75%  {background: green; left: -5px; top: 200px;}
+    100% {background: red; left: -5px; top: 0px;}
+}
+
+@keyframes myfirst 
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 90%; top: 0px;}
+    50%  {background: blue; left: 90%; top: 200px;}
+    75%  {background: green; left: -5px; top: 200px;}
+    100% {background: red; left: -5px; top: 0px;}
+}
+
+/* circular image*/
+.circular {
+  width: 220px;
+  height: 200px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background-image: url("lights.jpg") no-repeat;
+  }
+.img-circle{
+  padding: 10px;
+    width:200px;
+    height:176px;
+}
+.slideshow-container{ 
+  width: 100%;
+}
+.col-lg-6{
+  width:40%
+  right:0;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+.mySlides {
+    display: none;
+}
+.{
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 190;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  right: 16%;
+  position: absolute;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  position: absolute;;
+  color: #f2f2f2;
+  font-size: 35px;
+  font-style: inherit;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 78px;
+  width: 70%;
+  text-align: center;
+  top: 30%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 60;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*footer background*/
+.button{
+  background-color: black;
+  padding: 0;
+  
+}
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.mybox{
+  position: right;
+}
